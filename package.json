@@ -1,0 +1,29 @@
+{
+  "name": "UGMONK",
+  "version": "1.0.0",
+  "description": "Landing page for UGMONK",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/src/scss/style.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/src/scss/style.scss assets/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "SADEGH",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "gulp": "^4.0.2",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "save-dev": "0.0.1-security"
+  }
+}
