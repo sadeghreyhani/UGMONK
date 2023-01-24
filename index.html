@@ -5,10 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>UGMONK SHOP</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>UGMONK</title>
 </head>
 
-<body></body>
+<body>
+    <form action="/search-results" method="get" class="c-search js-search">
+        <div class="o-wrapper ">
+            <i class="cross-icon js-search-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="cross-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </i>
+            <label class="c-search__label" for="search-box">Search our website: </label>
+            <input class="c-search__input" type="text" id="search-box" name="q" autocomplete="on"
+                placeholder="Search for products">
+            <button class="c-search__button" type="submit">Search</button>
+        </div>
+    </form>
+    <header class="c-header">
+        <div class="o-wrapper display-flex">
+            <div class="c-header__logo-box"><a href="#"><img src="/assets/img/logo-lg.png"
+                        alt="WebMart - Your one-stop online shopping destination"></a></div>
+            <nav class="c-header__navbar">
+                <ul class="c-header__navbar__items">
+                    <li class="c-header__items__item ">
+                        <a href="#" class="c-header__item__link" title="Analog">Avalog<span
+                                class="plus">&nbsp;</span></a>
+                        <ul class="c-header__submenu">
+                            <div class="c-header__submenu__grid">
+                                <li class="c-header__submenu__item align-self-center ">
+                                    <h2 class="c-header__submenu__heading u-margin-bottom-small">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </h2>
+                                    <p class="c-header__submenu__paragraph u-margin-bottom-small">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, eaque.
+                                    </p>
+                                    <a href="#" class="c-header__submenu__btn btn btn__secondry">Lorem ipsum dolor
+                                        sit.</a>
+                                </li>
+                                <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                        title="Image"><img class="c-header__submenu__img"
+                                            src="/assets/img/product-img-1.webp" alt=""></a></li>
+                                <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                        title="Image"><img class="c-header__submenu__img"
+                                            src="/assets/img/product-img-2.webp" alt=""></a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="c-header__items__item">
+                        <a href="#" class="c-header__item__link" title="Clothing">Clothing<span
+                                class="plus">&nbsp;</span></a>
+                        <ul class="c-header__submenu">
+                            <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                    title="Men">Men</a></li>
+                            <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                    title="Women">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-header__items__item">
+                        <a href="#" class="c-header__item__link" title="Objects">Objects<span
+                                class="plus">&nbsp;</span></a>
+                        <ul class="c-header__submenu">
+                            <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                    title="Furniture">Furniture</a></li>
+                            <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
+                                    title="Decor">Decor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="c-header__action">
+                <li class="c-header__action__item"><a href="#" class="c-header__action__link btn btn__primary"
+                        title="Shop Analog">Shop Analog</a></li>
+                <li class="c-header__action__item">
+                    <a href="#" class="c-header__action__link" title="Card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="c-header__action__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-header__action__item">
+                    <a href="#" class="c-header__action__link" title="User">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="c-header__action__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-header__action__item js-search-open ">
+                    <i class="c-header__action__link " title="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="c-header__action__icon ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </i>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="c-main">
+        <div class="c-hero">
+            <div class="o-wrapper">
+                <div class="c-hero__content">
+                    <h1 class="c-hero__heading">
+                        Analog: The Simplest<br> Productivity System
+                    </h1>
+                    <div class="c-hero__btns">
+                    <a href="#" class="c-hero__btn btn btn__third u-margin-right-small">Get Analog →</a>
+                    <a href="#" class="c-hero__btn btn btn__four">How it Work's →</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/src/js/main.js"></script>
+</body>
 
 </html>
