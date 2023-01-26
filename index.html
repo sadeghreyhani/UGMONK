@@ -3,28 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UGMONK is a premium design-driven brand that creates products that are functional, minimal, and long-lasting. This is our online store where you can find our products.">
+    <meta name="keywords" content="UGMONK, design-driven brand, premium products, online store">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <title>UGMONK</title>
+    <title>UGMONK | Premium Design-Driven Brand</title>
 </head>
+
 
 <body>
     <form action="/search-results" method="get" class="c-search js-search">
-        <div class="o-wrapper ">
+        <div class="o-wrapper">
             <i class="cross-icon js-search-close">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="cross-icon">
+                    stroke="currentColor" class="cross-icon" title="Search Cross Icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </i>
-            <label class="c-search__label" for="search-box">Search our website: </label>
+            <label class="c-search__label" for="search-box">Search our website:</label>
             <input class="c-search__input" type="text" id="search-box" name="q" autocomplete="on"
                 placeholder="Search for products">
-            <button class="c-search__button" type="submit">Search</button>
+            <button class="c-search__button" type="submit" aria-label="Search">Search</button>
         </div>
     </form>
+
     <header class="c-header">
         <div class="o-wrapper display-flex">
             <div class="c-header__logo-box"><a href="#"><img src="/assets/img/logo-lg.png"
@@ -48,7 +52,7 @@
                                 </li>
                                 <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
                                         title="Image"><img class="c-header__submenu__img"
-                                            src="/assets/img/product-img-1.webp" alt=""></a></li>
+                                            src="/assets/img/product-img-3.jpg" alt=""></a></li>
                                 <li class="c-header__submenu__item"><a href="#" class="c-header__submenu__link"
                                         title="Image"><img class="c-header__submenu__img"
                                             src="/assets/img/product-img-2.webp" alt=""></a></li>
@@ -82,27 +86,28 @@
                 <li class="c-header__action__item"><a href="#" class="c-header__action__link btn btn__primary"
                         title="Shop Analog">Shop Analog</a></li>
                 <li class="c-header__action__item">
-                    <a href="#" class="c-header__action__link" title="Card">
+                    <a href="#" class="c-header__action__link" title="Go to Shopping Cart">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="c-header__action__icon">
+                            stroke="currentColor" class="c-header__action__icon" alt="Shopping cart icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
                         </svg>
                     </a>
                 </li>
+
                 <li class="c-header__action__item">
-                    <a href="#" class="c-header__action__link" title="User">
+                    <a href="#" class="c-header__action__link" title="Go to User Profile">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="c-header__action__icon">
+                            stroke="currentColor" class="c-header__action__icon" alt="User Profile icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                         </svg>
                     </a>
                 </li>
                 <li class="c-header__action__item js-search-open ">
-                    <i class="c-header__action__link " title="Search">
+                    <i class="c-header__action__link " title="GO TO Search Box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="c-header__action__icon ">
+                            stroke="currentColor" class="c-header__action__icon " title="Search Box Icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
@@ -112,20 +117,22 @@
         </div>
     </header>
     <main class="c-main">
-        <div class="c-hero">
+        <section class="c-hero">
             <div class="o-wrapper">
                 <div class="c-hero__content">
                     <h1 class="c-hero__heading">
                         Analog: The Simplest<br> Productivity System
                     </h1>
                     <div class="c-hero__btns">
-                        <a href="#" class="c-hero__btn btn btn__third u-margin-right-small">Get Analog →</a>
-                        <a href="#" class="c-hero__btn btn btn__four">How it Work's →</a>
+                        <a href="/analog-product" class="c-hero__btn btn btn__third u-margin-right-small"
+                            title="Learn more about Analog Product">Get Analog →</a>
+                        <a href="/how-it-works" class="c-hero__btn btn btn__four"
+                            title="Learn How Analog Product Works">How it Works →</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="c-table">
+        </section>
+        <section class="c-table">
             <div class="o-wrapper">
                 <div class="c-table__links">
                     <button id="best-seller-id" class="c-table__links__button"
@@ -137,409 +144,703 @@
                 <div class="c-table__content" id="best-seller">
                     <div class="c-table__product__grid">
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-1.webp" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <a href="#" class="btn btn__third c-table__product__grid__link-more">Shop All Best Sellers →</a>
                     </div>
                 </div>
                 <div class="c-table__content" id="new-arrivals">
                     <div class="c-table__product__grid">
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-4.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <a href="#" class="btn btn__third c-table__product__grid__link-more">Shop All Best Sellers →</a>
                     </div>
                 </div>
                 <div class="c-table__content" id="analog">
                     <div class="c-table__product__grid">
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-2.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <a href="#" class="btn btn__third c-table__product__grid__link-more">Shop All Best Sellers →</a>
                     </div>
                 </div>
                 <div class="c-table__content" id="objects">
                     <div class="c-table__product__grid">
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <div class="c-table__product">
-                            <a href="#" class="c-table__product__img "><img src="./assets/img/product-img-1.webp"
-                                    alt="product image"></a>
-                            <header class="c-table__product__header">
-                                <a class="c-table__product__title" href="#">Analog Yearly Pack Promo</a>
-                                <h5 class="c-table__product__price">115$</h5>
-                            </header>
+                            <a href="https://example.com/analog-yearly-pack-promo" class="c-table__product__img">
+                                <img src="./assets/img/product-img-3.jpg" alt="Analog Yearly Pack Promo product image">
+                            </a>
+                            <div class="c-table__product__info">
+                                <a class="c-table__product__title"
+                                    href="https://example.com/analog-yearly-pack-promo">Analog Yearly Pack Promo</a>
+                                <p class="c-table__product__price">115$</p>
+                            </div>
                         </div>
+
                         <a href="#" class="btn btn__third c-table__product__grid__link-more">Shop All Best Sellers →</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="c-hero seconde-bg">
+            <div class="o-wrapper">
+                <div class="c-hero__content">
+                    <h1 class="c-hero__heading">
+                        Gather: Your Desk Simplified
+                    </h1>
+                    <div class="c-hero__btns">
+                        <a href="#" class="c-hero__btn btn btn__third u-margin-right-small">Pre-order on Kickstarter
+                            →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-reviews">
+            <div class="o-wrapper">
+                <h2 class="c-reviews__heading">Watch Analog In Action</h2>
+                <div class="c-reviews__grid">
+
+                    <div class="c-reviews__videos">
+                        <a class="c-reviews__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="c-reviews__link__icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                            </svg>
+
+                            <img class="c-reviews__img" src="/assets/img/video-bg-1.jpg" alt="laptopb youtube video">
+                        </a>
+                        <h4 class="c-reviews__title">Lorem ipsum dolor sit amet.</h4>
+                        <p class="c-reviews__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam vitae fugiat consectetur?
+                        </p>
+                        <a href="#" title="Click To Watch Video" class="btn btn__third">Watch How Chase Uses Analog</a>
+                    </div>
+
+                    <div class="c-reviews__videos">
+                        <a class="c-reviews__link" href="https://www.youtube.com/watch?v=jNQXAC9IVRw">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="c-reviews__link__icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                            </svg>
+
+                            <img class="c-reviews__img" src="/assets/img/video-bg-2.jpg"
+                                alt="Analog Laptop Review - Chase demonstrates how he uses Analog for productivity">
+                        </a>
+                        <h4 class="c-reviews__title">Analog Laptop Review: Boost Productivity with Analog</h4>
+                        <p class="c-reviews__paragraph">In this video, Chase demonstrates how he uses Analog to boost
+                            his productivity and stay organized. Learn tips and tricks for using Analog to improve your
+                            workflow.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" title="Watch Analog Laptop Review"
+                            class="btn btn__third">Watch Video</a>
+                    </div>
+
+
+                    <div class="c-reviews__videos">
+                        <a class="c-reviews__link" href="https://www.youtube.com/watch?v=jNQXAC9IVRw">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="c-reviews__link__icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                            </svg>
+
+                            <img class="c-reviews__img" src="/assets/img/video-bg-4.jpg"
+                                alt="Analog Laptop Review - Chase demonstrates how he uses Analog for productivity">
+                        </a>
+                        <h4 class="c-reviews__title">Analog Laptop Review: Boost Productivity with Analog</h4>
+                        <p class="c-reviews__paragraph">In this video, Chase demonstrates how he uses Analog to boost
+                            his productivity and stay organized. Learn tips and tricks for using Analog to improve your
+                            workflow.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" title="Watch Analog Laptop Review"
+                            class="btn btn__third">Watch Video</a>
+                    </div>
+
+                    <div class="c-reviews__videos">
+                        <a class="c-reviews__link" href="https://www.youtube.com/watch?v=jNQXAC9IVRw">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="c-reviews__link__icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                            </svg>
+
+                            <img class="c-reviews__img" src="/assets/img/video-bg-3.jpg"
+                                alt="Analog Laptop Review - Chase demonstrates how he uses Analog for productivity">
+                        </a>
+                        <h4 class="c-reviews__title">Analog Laptop Review: Boost Productivity with Analog</h4>
+                        <p class="c-reviews__paragraph">In this video, Chase demonstrates how he uses Analog to boost
+                            his productivity and stay organized. Learn tips and tricks for using Analog to improve your
+                            workflow.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" title="Watch Analog Laptop Review"
+                            class="btn btn__third">Watch Video</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="c-product">
+            <div class="o-wrapper">
+                <div class="c-product__items grid-2">
+                    <div class="c-product__image"><img src="./assets/img/product-img-3.jpg" alt=""></div>
+                    <div class="c-product__content">
+
+                        <ul class="c-product__list">
+                            <h2 class="c-product__heading">Analog Starter Kit</h2>
+                            <li class="c-product__item"><span class="c-product__span"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="c-product__icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                    </svg>
+                                </span> Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.</li>
+
+                            <li class="c-product__item"><span class="c-product__span"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="c-product__icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                    </svg>
+                                </span> Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.</li>
+
+
+                            <li class="c-product__item"><span class="c-product__span"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="c-product__icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                    </svg>
+                                </span> Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit.</li>
+                                <a href="#" class="c-product__btn btn btn__third">Get the Starter Kit - $95 USD</a>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <script src="/assets/src/js/main.js"></script>
 </body>

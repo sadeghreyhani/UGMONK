@@ -21,6 +21,9 @@
         color: $light-gray;
         letter-spacing: 0.1rem;
         display: none;
+        animation-name: fadeInOut;
+        animation-duration: 1s;
+        animation-fill-mode: both;
 
     }
 
@@ -85,3 +88,23 @@
      
     }
 }
+.c-table__links__button.active {
+    color: $primary-color;
+   &::after {
+    margin-top: .5rem;
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: $primary-color;
+   }
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

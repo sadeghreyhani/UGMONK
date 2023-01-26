@@ -45,11 +45,13 @@ document.getElementById("best-seller-id").classList.add("active");
 function table(evt, tableName) {
   document.querySelectorAll('.c-table__content').forEach(function (tableRemoveStyle) {
     tableRemoveStyle.style.display = "none";
+    tableRemoveStyle.classList.remove("fadeInOut");
   });
   document.querySelectorAll('.c-table__links__button').forEach(function (tableRemoveStyle) {
     tableRemoveStyle.classList.remove("active");
   });
   document.getElementById(tableName).style.display = "block";
-
+  document.getElementById(tableName).classList.add("fadeInOut");
   evt.currentTarget.classList.add("active");
 }
+
